@@ -11,9 +11,9 @@ ENCRYPT A MESSAGE WITH YOUR PASSWORD
     Content-Type: application/json
     Body:
     {
-    	"action":"encrypt",
-	"message":"your message",
-	"password":"your password"
+       	"action":"encrypt",
+    	"message":"your message",
+    	"password":"your password"
     }
 
 -------------------------------------
@@ -25,9 +25,9 @@ DECRYPT A MESSAGE WITH YOUR PASSWORD
     Content-Type: application/json
     Body:
     {
-	"action":"decrypt",
-	"message":"your message",
-	"password":"your password"
+       	"action":"decrypt",
+    	"message":"your message",
+    	"password":"your password"
     }
 
 ------------------------------------
@@ -36,10 +36,10 @@ OPTIONAL FLAGS
     Adding this extra parameter will show you the process execution logs
     Body:
     {
-	"action":"encrypt",
-	"message":"your message",
-	"password":"your password",
-        "debugon":true
+    	"action":"encrypt",
+    	"message":"your message",
+    	"password":"your password",
+            "debugon":true
     }
 
 
