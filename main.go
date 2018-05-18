@@ -93,7 +93,7 @@ func kylecrypt(message, password string) string {
 		}
 		encr = append(encr, byte(lbyte))
 		if debugOn {
-			debugOut = append(debugOut, string(string(i)+" | char "+string(l)+" | crypt "+string(lbyte)+" | bytes "+string(encr)))
+			debugOut = append(debugOut, string(string(int(i))+" | char "+string(l)+" | crypt "+string(lbyte)+" | bytes "+string(encr)))
 		}
 	}
 	return string(encr)
@@ -110,7 +110,7 @@ func kyleuncrypt(message, password string) string {
 		}
 		dencr = append(dencr, byte(lbyte))
 		if debugOn {
-			debugOut = append(debugOut, string(string(i)+" | char "+string(l)+" | decrypt "+string(lbyte)+" | bytes "+string(dencr)))
+			debugOut = append(debugOut, string(string(int(i))+" | char "+string(l)+" | decrypt "+string(lbyte)+" | bytes "+string(dencr)))
 		}
 	}
 	return string(dencr)
